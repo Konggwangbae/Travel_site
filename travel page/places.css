@@ -3,10 +3,23 @@ body {
     color: rgb(68, 68, 68)
 }
 
+#page-logo a {
+    color: rgb(183, 230, 235);
+}
+
 header {
     position: static;
     /* 포지션의 기본값 places.css에 코드 입력한 이유는?
     shared.css에서 header 부분에 position: absolute;를 설정해 두었기 때문에 places.html에서도 적용이 되서 기본값으로 처리를 하기 위해서 입력을 함.*/
+}
+
+header a{
+    color: rgb(183, 230, 235);
+}
+
+header nav a:hover {
+    background-color: rgb(183, 230, 235);
+    color: rgb(59, 59, 59);
 }
 
 main ul {
@@ -23,6 +36,10 @@ li:nth-of-type(3) {
 }
 
 li:nth-of-type(6) {
+    grid-column: 1 / span 2;
+}
+
+li:nth-of-type(9) {
     grid-column: 1 / span 2;
 }
 
@@ -46,6 +63,10 @@ main li img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.item-content h2 {
+    margin: 0;
 }
 
 .actions {
